@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./*/**/*.{html,js}"],
+  content: ["./**/*.{html,js}"],
   theme: {
     extend: {
       colors: {
@@ -12,8 +12,8 @@ module.exports = {
         statHeading: "hsla(0, 0%, 100%, 0.6)",
       },
       backgroundImage: (theme) => ({
-        "test-device-lg": "url('./images/image-header-desktop.jpg')",
-        "test-device-sm": "url('./images/image-header-mobile.jpg')",
+        "test-device-lg": "url('/images/image-header-desktop.jpg')",
+        "test-device-sm": "url('/images/image-header-mobile.jpg')",
       }),
     },
     container: {
