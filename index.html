@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap"
+      rel="stylesheet"
+    />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <title>Frontend Mentor | Stats preview card component</title>
+  </head>
+  <body class="bg-mainBackround">
+    <main
+      class="container mx-auto flex items-center justify-center py-[2.5rem] lg:h-screen"
+    >
+      <div
+        class="grid h-[56.25rem] w-[20rem] gap-2 rounded-lg bg-cardBackground md:h-[56.25rem] md:w-[37.5rem] lg:h-[25rem] lg:w-[64rem] lg:grid-cols-2"
+      >
+        <div id="stats" class="px-6 py-6 lg:py-[3.75rem] lg:px-[3.75rem]">
+          <h1
+            class="text-center font-heading text-3xl font-bold text-white lg:text-left"
+          >
+            Get <span class="text-accent">insights</span> that help your
+            business grow.
+          </h1>
+          <p class="pt-8 text-center font-para text-mainParagraph lg:text-left">
+            Discover the benefits of data analytics and make better decisions
+            regarding revenue, customer experience, and overall efficiency.
+          </p>
+          <div
+            class="grid gap-[2.5rem] pt-8 text-center text-mainHeading_stats lg:grid-cols-3 lg:gap-3 lg:text-left"
+          >
+            <div>
+              <h1
+                class="font-heading text-2xl font-semibold text-mainHeading_stats"
+              >
+                10k+
+              </h1>
+              <p
+                class="mt-1 font-para text-xs font-normal uppercase tracking-widest text-mainParagraph"
+              >
+                companies
+              </p>
+            </div>
+            <div>
+              <h1
+                class="font-heading text-2xl font-semibold text-mainHeading_stats"
+              >
+                314
+              </h1>
+              <p
+                class="mt-1 font-para text-xs font-normal uppercase tracking-widest text-mainParagraph"
+              >
+                templates
+              </p>
+            </div>
+            <div>
+              <h1
+                class="font-heading text-2xl font-semibold text-mainHeading_stats"
+              >
+                12M+
+              </h1>
+              <p
+                class="mt-1 font-para text-xs font-normal uppercase tracking-widest text-mainParagraph"
+              >
+                queries
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          id="image"
+          class="relative order-first h-[18.75rem] overflow-hidden rounded-t-lg bg-test-device-sm object-contain md:order-first md:bg-test-device-lg lg:order-last lg:h-full lg:rounded-r-lg lg:rounded-l-none lg:bg-test-device-lg"
+        >
+          <!-- <img
+            src="./images/image-header-desktop.jpg"
+            alt="people in an office setting"
+            class="absolute inset-0 h-full w-full object-cover"
+          /> -->
+          <div class="absolute inset-0 bg-accent bg-opacity-60"></div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
